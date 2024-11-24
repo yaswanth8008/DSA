@@ -8,7 +8,7 @@ def solve(A,B,C):
             if summ > time:
                 workers += 1
                 summ = arr[i]
-                if summ == k:
+                if workers == k:
                     return False
         return True
     def min_time(arr,k):
