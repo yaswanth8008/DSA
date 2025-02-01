@@ -1,7 +1,7 @@
 
 
 
-def solve(A):
+def solve(self, A):
     n = len(A)
     m = len(A[0])
     summs = []
