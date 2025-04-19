@@ -3,7 +3,7 @@
 
 
 
-def solve(self, A):
+def solve(A):
     def merge_inversions(arr,s,e,m):
         p1 = s 
         p2 = m+1
