@@ -5,6 +5,11 @@
 # A Bitonic Sequence is a sequence of numbers which is first strictly increasing then after a point strictly decreasing.
 
 
+# Approach :
+#  Find the pivot element 
+# Then do binary search in the two halves
+
+
 def solve(A, B):
     def find_pivot(arr):
         s = 0
