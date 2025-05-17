@@ -15,13 +15,13 @@ def solve(A, B):
         for j in range(i+1,len(A)):
             point_1 = A[i],B[i]
             point_2 = A[j],B[j]
-            # if A[i] == A[j] or B[i] == B[j]:
-            #     break
-            # else:
-            point_3 = A[j],B[i]
-            point_4 = A[i],B[j]
-            point_3_str =  str(A[j])+'#'+str(B[i])
-            point_4_str =  str(A[i])+'#'+str(B[j])
-            if point_3_str in h and point_4_str in h:
-                cnt += 1
+            if A[i] == A[j] or B[i] == B[j]:
+                continue
+            else:
+                point_3 = A[j],B[i]
+                point_4 = A[i],B[j]
+                point_3_str =  str(A[j])+'#'+str(B[i])
+                point_4_str =  str(A[i])+'#'+str(B[j])
+                if point_3_str in h and point_4_str in h:
+                    cnt += 1
     return cnt//2
