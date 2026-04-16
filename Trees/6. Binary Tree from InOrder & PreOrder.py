@@ -9,7 +9,9 @@ class TreeNode:
 		self.left = None
 		self.right = None
 
+# First argument is an integer array A denoting the preorder traversal of the tree.
 
+# Second argument is an integer array B denoting the inorder traversal of the tree.
 
 def buildTree(A, B):
     p_s = 0
