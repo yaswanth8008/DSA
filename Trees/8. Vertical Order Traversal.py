@@ -1,11 +1,11 @@
 # Given a binary tree, return a 2-D array with vertical order traversal of it. Go through the example and image for more details.
 
 
-# class TreeNode:
-#	def __init__(self, x):
-#		self.val = x
-#		self.left = None
-#		self.right = None
+class TreeNode:
+	def __init__(self, x):
+		self.val = x
+		self.left = None
+		self.right = None
 from collections import deque
 
 def verticalOrderTraversal(A):
